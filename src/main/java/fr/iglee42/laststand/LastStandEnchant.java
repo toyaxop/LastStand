@@ -22,7 +22,6 @@ public class LastStandEnchant extends Enchantment {
     public static final ResourceLocation ID = new ResourceLocation(LastStand.MODID,"last_stand");
     public LastStandEnchant() {
         super(Rarity.UNCOMMON, EnchantmentCategory.ARMOR, new EquipmentSlot[]{EquipmentSlot.HEAD,EquipmentSlot.CHEST,EquipmentSlot.LEGS,EquipmentSlot.FEET});
-        setRegistryName(new ResourceLocation(LastStand.MODID,"last_stand"));
     }
 
     @Override
@@ -45,7 +44,7 @@ public class LastStandEnchant extends Enchantment {
 
     @SubscribeEvent
     public static void onHurt(final LivingHurtEvent e) {
-        if (!(e.getEntityLiving() instanceof Player player)) return;
+        if (!(e.getEntity() instanceof Player player)) return;
 
         final int enchantmentLevels = EnchantmentHelper.getEnchantmentLevel(Objects.requireNonNull(ForgeRegistries.ENCHANTMENTS.getValue(ID)), player);
 
