@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "laststand",
+  "version": "${version}",
+  "name": "LastStand",
+  "description": "Prevents dying with XP",
+  "authors": [],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/laststand/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "fr.iglee42.laststand.LastStand"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
