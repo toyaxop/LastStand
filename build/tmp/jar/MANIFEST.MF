@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: LastStand
+MixinConfigs: laststand.mixins.json
+Implementation-Version: 1.20.1-1.0
+Specification-Vendor: iglee42
+Specification-Title: laststand
+Implementation-Timestamp: 2024-02-13T21:35:33+0100
+Specification-Version: 1
+Implementation-Vendor: iglee42
+
